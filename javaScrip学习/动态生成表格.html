@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动态生成表格</title>
+	</head>
+	<body>
+		<div id="">
+			<table>
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>科目</th>
+						<th>成绩</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>sfiud</tr>
+					<tr>sfiud</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- javascript -->
+		<script>
+			var datas = [{
+				name: '昂松',
+				sbuject: 'javaScript',
+				score: 100
+			}, {
+				name: '围栏',
+				sbuject: 'javaScript',
+				score: 100
+			}, {
+				name: '天蓝',
+				sbuject: 'javaScript',
+				score: 80
+			}];
+			//创建长度
+			var tbody = document.querySelector('tbody');
+			// console.log(datas.length)
+			for (var i = 0; i < datas.length; i++) {
+				var tr = documet.createElement('tr')
+				tbody.appendChild(tr);
+			}
+		</script>
+	</body>
+</html>
